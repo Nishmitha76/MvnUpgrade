@@ -9,7 +9,9 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    allow:
+      # Allow updates for Lodash
+      - dependency-name: "com.oracle.database.jdbc:ojdbc8"
     ignore:
-      - "org.springframework.boot:spring-boot-starter-web"
-    versioning-strategy: "widen"
-    range-strategy: "auto"
+      - dependency-name: "org.springframework.boot:spring-boot-starter-web"
+   
