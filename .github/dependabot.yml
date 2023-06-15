@@ -17,4 +17,5 @@ updates:
       - dependency-name: "org.springframework.boot:spring-boot-starter-data-mongodb"
     ignore:
       - dependency-name: "org.springframework.boot:spring-boot-starter-web"
+        versions: ["3.0.x"]
    
